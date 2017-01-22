@@ -333,7 +333,11 @@ void page9(){
 }
 
 void append_HTML_header() {
-  webpage  = "<!DOCTYPE html><html><head>";
+  webpage = "HTTP/1.1 200 OK";
+  webpage += "Content-Type: text/html";
+  webpage += "Connection: close";  // the connection will be closed after completion of the response
+  webpage += "Refresh: 30";        // refresh the page automatically every 30 sec
+  webpage += "<!DOCTYPE html><html><head>";
   webpage += "<meta http-equiv='refresh' content='60'>"; // 30-sec refresh time, test needed to prevent auto updates repeating some commands
   webpage += "<title>"+sitetitle+"</title><style>";
   webpage += "body {width:"+String(sitewidth)+"px;margin:0 auto;font-family:arial;font-size:14px;text-align:center;color:blue;background-color:#F7F2Fd;}";
