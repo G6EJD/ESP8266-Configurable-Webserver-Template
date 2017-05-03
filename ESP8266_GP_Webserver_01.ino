@@ -288,8 +288,6 @@ void page6(){
   webpage += "Stage-6 Now re-connect to your normal Wi-Fi service and now when the ESP8266 starts it will automatically connect to the Wi-Fi.<br>";
   webpage += "and there is no need to include const char *ssid = \"your_ssid\"; and const char *password  = \"your_password\"; in your code.<br><br>";
   webpage += "Stage-7 To use the Wi-Fi manager again include these libraries in your next code:<br>";
-  webpage += "#include WiFiManager.h\     // https://github.com/tzapu/WiFiManager<br>";
-  webpage += "#include DNSServer.h\<br>";
   webpage += "and in the program setup include these lines:<br>";
   webpage += "WiFiManager wifiManager;<br>";
   webpage += "//wifiManager.resetSettings(); // If needed!<br>";
